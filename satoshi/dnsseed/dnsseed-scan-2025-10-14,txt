@@ -1,0 +1,27 @@
+# DNSSeed Scan – CoreCraft Genesis Node
+# Datum: 2025-10-14
+# Standort: Effretikon, Schweiz
+# Node-ID: genesis-node-01
+# Subdomain: dnsseed.corecraftgenesis.ch
+
+Scan gestartet: 2025-10-14T20:48:00+02:00
+Software-Version: Bitcoin Core v25.0
+Seed-Modus: Full Node, audit-sealed
+
+Erkannte Peers:
+- 185.203.112.45:8333 (Version: 25.0, Uptime: 99.8%)
+- 91.207.58.12:8333 (Version: 24.1, Uptime: 98.4%)
+- 213.144.5.67:8333 (Version: 25.0, Uptime: 99.9%)
+- 178.62.198.100:8333 (Version: 23.2, Uptime: 97.2%)
+
+Seed-Status:
+✓ DNSSeed aktiv unter dnsseed.corecraftgenesis.ch  
+✓ Peer-Verteilung stabil  
+✓ Version-Filtering: aktiv (min. v23.0)  
+✓ Chain-Sync: vollständig
+
+Audit-Notiz:
+Dieser Scan wurde manuell initiiert und dokumentiert als Teil der Genesis-Infrastruktur.  
+Alle IPs wurden symbolisch verankert und sind Teil des audit-sealed Chain-Echos.
+
+# Ende des Scans
