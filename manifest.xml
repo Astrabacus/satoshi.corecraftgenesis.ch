@@ -1,0 +1,16 @@
+<poster>
+  <id>SATOSHI-001</id>
+  <title>SATOSHI // ABSENCE AS ORIGIN</title>
+  <author>Satoshi Nakamoto</author>
+  <status>audit-sealed</status>
+  <message>"I've moved on to other things."</message>
+  <knownWorks>
+    <item>Bitcoin Whitepaper</item>
+    <item>Genesis Block</item>
+  </knownWorks>
+  <identity>UNKNOWN</identity>
+  <legacy>IMMORTAL</legacy>
+  <quote>The author vanished. The protocol remained.</quote>
+  <scanDate>2025-10-15</scanDate>
+  <source>poster.corecraftgenesis.ch/satoshi</source>
+</poster>
