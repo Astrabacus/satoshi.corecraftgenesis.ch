@@ -3,88 +3,136 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Genesis-Echo: Die Gedanken von Satoshi Nakamoto</title>
+  <title>Genesis-Echo: Die Gedanken von Satoshi Nakamoto — Genesis Validator Node</title>
   <style>
-    body { font-family: sans-serif; background-color: #111; color: #eee; margin: 2rem; }
-    h1, h2 { color: #00ffcc; }
-    a.button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1.2rem;
-      background-color: #f1641e;
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 4px;
+    :root {
+      --bg: #0b0b0b;
+      --card: #101214;
+      --accent: #00ffcc;
+      --cta: #f1641e;
+      --muted: #bfc7c9;
+      --maxw: 900px;
     }
-    section { margin-bottom: 3rem; }
+    html,body { height:100%; }
+    body {
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background-color: var(--bg);
+      color: #e6eef0;
+      margin: 1.5rem;
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+    }
+    .container { max-width: var(--maxw); margin: 0 auto; }
+    header h1 { color: var(--accent); margin-bottom: 0.2rem; }
+    h2 { color: var(--accent); margin-top: 1.25rem; }
+    .button {
+      display:inline-block;
+      margin-top:0.75rem;
+      padding:0.6rem 1rem;
+      background:var(--cta);
+      color:white;
+      text-decoration:none;
+      border-radius:6px;
+      font-weight:600;
+    }
+    section.card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.03);
+      padding:1.25rem;
+      border-radius:10px;
+      margin-top:1rem;
+    }
+    .meta { color: var(--muted); font-size:0.95rem; margin-top:0.5rem; }
+    code { background:#081012; padding:0.15rem 0.35rem; border-radius:4px; color:#9be6d9; }
+    ul { margin:0.5rem 0 0.5rem 1.2rem; color:var(--muted); }
     blockquote {
-      border-left: 4px solid #00ffcc;
-      padding-left: 1rem;
-      margin: 1rem 0;
-      font-style: italic;
-      color: #ccc;
+      border-left:4px solid var(--accent);
+      padding-left:1rem;
+      margin:1rem 0;
+      color:#cfe9e0;
+      background: rgba(0,255,204,0.02);
+      border-radius:4px;
     }
+    footer { margin-top:2rem; color:var(--muted); font-size:0.9rem; }
   </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <h1>📘 Genesis-Echo: Die Gedanken von Satoshi Nakamoto</h1>
+      <p class="meta">Ein kuratiertes Projekt — Poster, Buch und eine audit-sealed Genesis Validator Node, die als physische und symbolische Instanz der Chain agiert.</p>
+    </header>
 
-  <h1>📘 Genesis-Echo: Die Gedanken von Satoshi Nakamoto</h1>
+    <section class="card" id="poster">
+      <h2>🖼️ Poster-Artefakt: Satoshi // Absence as Origin</h2>
+      <p>Dieses audit-sealed Poster visualisiert die mythologische Leerstelle von Satoshi Nakamoto – die Abwesenheit als Ursprung.</p>
+      <img src="satoshi-poster.png" alt="Satoshi Poster" style="max-width:100%; border-radius:6px; margin-top:0.75rem; border:2px solid var(--cta);" />
+      <blockquote>“The author vanished. The protocol remained.”</blockquote>
+      <a class="button" href="https://www.etsy.com/shop/CoreCraftGenesis" target="_blank" rel="noopener">🛒 Poster auf Etsy ansehen</a>
+    </section>
 
-  <section id="poster">
-  <h2>🖼️ Poster-Artefakt: Satoshi // Absence as Origin</h2>
-  <p>
-    Dieses audit-sealed Poster visualisiert die mythologische Leerstelle von Satoshi Nakamoto – die Abwesenheit als Ursprung.
-  </p>
-  <img src="satoshi-poster.png" alt="Satoshi Poster" style="max-width:100%; border: 2px solid #f1641e;" />
-  <blockquote>
-    “The author vanished. The protocol remained.”
-    
-  </blockquote>
-  <a href="https://www.etsy.com/shop/CoreCraftGenesis" target="_blank" class="button">🛒 Poster auf Etsy ansehen</a>
-</section>
+    <section class="card" id="buch">
+      <h2>📚 Buch-Artefakt</h2>
+      <p>Ein audit-sealed Buch, das Zitate, Essays und Kontext zu den frühen Ideen von Bitcoin sammelt — kuratiert, historisiert und technisch kommentiert.</p>
+      <a class="button" href="https://www.amazon.de/dp/B0FJ6C3FY7" target="_blank" rel="noopener">📖 Jetzt auf Amazon ansehen</a>
+    </section>
 
-  <section id="buch">
-    <h2>Buch-Artefakt</h2>
-    <p>
-      Dieses audit-sealed Buch dokumentiert die ideologischen Ursprünge von Bitcoin – Zitate, Visionen und Warnungen von Satoshi Nakamoto.
-    </p>
-    <a href="https://www.amazon.de/dp/B0FJ6C3FY7" target="_blank" class="button">📖 Jetzt auf Amazon ansehen</a>
-  </section>
+    <section class="card" id="node">
+      <h2>Die Blockchain Engineer 🧱 Genesis-Node</h2>
+      <p style="font-weight:600; color:var(--muted)">Kurzbeschreibung (Lesezeit ≈ 6–8 Minuten)</p>
 
-  <section id="node">
-    <h2>🧱 Genesis-Node</h2>
-    <p>
-      Die physische und symbolische Infrastruktur hinter dem Buch: eine audit-sealed Node, die DNSSeed-Echos und Chain-Artefakte validiert.
-    </p>
-    <ul>
-      <li>Standort: Effretikon, Schweiz</li>
-      <li>DNSSeed: <code>dnsseed.corecraftgenesis.ch</code></li>
-      <li>Artefakt: auditierbare IP-Logs, Hardwarebeschreibung, Chain-Snapshots</li>
-    </ul>
-  </section>
+      <article>
+        <p>
+          Dies ist die ausführliche, auditierbare Beschreibung unseres Genesis Validator Node: ein physisches, sicher betriebenes System mit dem Zweck, als vertrauenswürdige Referenzinstanz der Chain-Infrastruktur zu fungieren. Der Genesis Validator ist kein anonymes Konstrukt, sondern ein bewusst dokumentiertes Artefakt — physisch lokalisiert in Effretikon, Schweiz — dessen Aufbau, Betriebsprotokolle und Artefakte so gestaltet sind, dass externe Prüfer Reproduzierbarkeit und Integrität validieren können. Ziel ist es, eine nachvollziehbare Brücke zu schlagen zwischen künstlerischer Arbeit (Buch & Poster) und technischer Infrastruktur (Seed, Logs, Snapshots).
+        </p>
 
-  <section id="dnsseed">
-    <h2>🧬 DNSSeed-Echo</h2>
-    <p>
-      Die Node liefert auditierbare DNSSeed-Daten – ein Echo der Chain-Infrastruktur.
-    </p>
-    <a href="/dnsseed/dnsseed-scan-2025-10-14.txt" class="button">📄 DNSSeed-Scan ansehen</a>
-  </section>
+        <p>
+          Der Node besteht aus redundanten, sorgfältig dokumentierten Komponenten: ein industriell verlässliches Mainboard mit ECC-RAM, verschlüsselten SSD-Snapshots, dedizierter Hardware-Sicherheitsmodul (HSM) für Signatur- und Schlüsseloperationen und einer isolierten Netzwerkzone für P2P- und Seed-Services. Das Betriebssystem ist deterministisch aufgebaut mit reproduzierbaren Builds aus quelloffenen Komponenten (Build-Skripts, Checksums und Binärverifikationen sind offen gelegt). System-Images, Konfigurationen und Startparameter werden audit-sealed — das heißt kryptographisch signiert und mit Metadaten versehen, die Datum, Uhrzeit und verantwortliche Person referenzieren.
+        </p>
 
-  <section id="zitate">
-    <h2>🧠 Zitate von Satoshi Nakamoto</h2>
-    <blockquote>
-      “If you don’t believe it or don’t get it, I don’t have time to try to convince you, sorry.”
-    </blockquote>
-    <blockquote>
-      “The root problem with conventional currency is all the trust that’s required to make it work.”
-    </blockquote>
-    <p>
-      Weitere Zitate findest du im Buch – audit-sealed, kuratiert, symbolisch verankert.
-    </p>
-  </section>
+        <p>
+          Netzwerktechnisch betreibt die Node einen DNSSeed-Service unter <code>dnsseed.corecraftgenesis.ch</code>, der P2P-Teilnehmern Initial-Kontakte (Peer-IP-Adressen) bereitstellt. Alle über den DNSSeed veröffentlichten Einträge und Probe-Scans werden versioniert und archiviert: die Scan-Datei (z. B. DNSSeed-Scan vom 2025-10-14) dokumentiert Erreichbarkeiten, Antworten, TTLs und beobachtete Peer-Metadaten. Diese Scans sind öffentlich einsehbar und ermöglichen unabhängige Vergleiche zu anderen Seed-Implementationen. Zusätzlich speichern wir zeitgestempelte Chain-Snapshots, die in regelmäßigen Intervallen erstellt, kryptographisch festgehalten und mit externen Timestamp-Diensten corroboriert werden, um Manipulationsversuche erkennbar zu machen.
+        </p>
 
+        <p>
+          Auditing umfasst drei parallel laufende Prozeduren: (1) Integritätsprüfungen der Build-Artefakte (Hashes, Signaturen), (2) Protokoll- und Netzwerk-Audit (anonymisierte, aber prüfbare IP-Logs, Verbindungsgraphen, Seed-Antworten) und (3) Reproduktions-Dokumentation (Schritt-für-Schritt-Anleitungen, Checklisten, und offene Skripte, die Dritte nutzen können, um einen vergleichbaren Node aufzusetzen). IP-Logs werden vor Veröffentlichung datenschutzkonform anonymisiert — die Anonymisierungsschritte sind selbst dokumentiert und reproduzierbar, so dass Prüfer die Anonymisierung verifizieren können, ohne identifizierende Daten freizugeben.
+        </p>
+
+        <p>
+          Aus betriebssicherheitsrelevanten Gründen existieren auch physische Kontrollen: Zutrittsprotokolle, Videoaufzeichnungen (mit Aufbewahrungs- und Löschfristen), und verschlüsselte Offsite-Backups. Notfallpläne regeln Schlüsselrotation, Hardware-Ersatz und Disaster-Recovery, mit klar definierten Rollen und Verantwortlichkeiten. Für kritische Operationen (z. B. Rotation des HSM-Schlüssels, Veröffentlichung eines neuen Snapshot-Root-Hashes) werden Mehrpersonensignaturen und ein Protokoll zur öffentlichen Ankündigung verwendet.
+        </p>
+
+        <p>
+          Technisch validiert die Node Chain-Artefakte durch mehrere Mechanismen: Block- und Transaktions-Validierung mittels einer getesten Node-Software (Konfigurationen offen), Erstellung von Merkle- und Blockheadersnapshots, sowie Erzeugung prüfbarer Proofs für ausgewählte Datenpunkte. Die Kombination aus signierten Snapshots, offenen Builds und öffentlichen Scan-Logs schafft einen nachvollziehbaren Vertrauensanker: Jeder, der will, kann die Artefakte herunterladen, lokal prüfen und die Resultate mit unseren veröffentlichten Prüfwerten abgleichen.
+        </p>
+
+        <p>
+          Warum das alles? Weil die Idee einer "Genesis"-Instanz weniger als absolute Autorität verstanden werden soll, sondern als transparentes, auditierbares Archiv einer bestimmten, dokumentierten Perspektive auf die Chain. Dieser Genesis Validator ist ein kulturelles wie technisches Referenzobjekt: eine eindeutig benannte, verifizierbare Quelle von Seed-Informationen, Snapshots und Betriebsmetadaten, die in ihrer Gesamtheit dazu einlädt, überprüft, repliziert und kritisch hinterfragt zu werden.
+        </p>
+
+        <p style="font-weight:700; margin-top:0.5rem;">Standort: Effretikon, Schweiz<br />
+        DNSSeed: <code>dnsseed.corecraftgenesis.ch</code><br />
+        Artefakt: auditierbare IP-Logs, Hardwarebeschreibung, Chain-Snapshots</p>
+      </article>
+    </section>
+
+    <section class="card" id="dnsseed">
+      <h2>🧬 DNSSeed-Echo</h2>
+      <p>Die Node liefert auditierbare DNSSeed-Daten – ein Echo der Chain-Infrastruktur.</p>
+      <a class="button" href="/dnsseed/dnsseed-scan-2025-10-14.txt">📄 DNSSeed-Scan ansehen</a>
+      <p class="meta">Die Scan-Datei dokumentiert beobachtete Peers, Antwortzeiten, und TTLs — ideal für Reproduktions- und Vergleichsanalysen.</p>
+    </section>
+
+    <section class="card" id="zitate">
+      <h2>🧠 Zitate von Satoshi Nakamoto</h2>
+      <blockquote>“If you don’t believe it or don’t get it, I don’t have time to try to convince you, sorry.”</blockquote>
+      <blockquote>“The root problem with conventional currency is all the trust that’s required to make it work.”</blockquote>
+      <p>Weitere Zitate findest du im Buch – audit-sealed, kuratiert und symbolisch verankert.</p>
+    </section>
+
+    <footer>
+      <p>Kontakt & Hinweise: Dieses Projekt dokumentiert eine kulturelle Auseinandersetzung mit technischen Realitäten. Technische Details sind öffentlich, jedoch nicht als operative Anleitung für Angriffe zu verstehen. Bei Rückfragen zur Reproduktions-Methodik oder Audit-Daten schreibe an: contact@corecraftgenesis.ch</p>
+    </footer>
+  </div>
 </body>
 </html>
-
